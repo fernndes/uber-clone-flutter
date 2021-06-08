@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:uberclone/pages/Signup.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -40,7 +39,7 @@ class _HomeState extends State<Home> {
                 style: TextStyle(fontSize: 20),
                 decoration: InputDecoration(
                     contentPadding: EdgeInsets.fromLTRB(32, 16, 32, 16),
-                    hintText: "e-mail",
+                    hintText: "E-mail",
                     filled: true,
                     fillColor: Colors.white,
                     border: OutlineInputBorder(
@@ -54,7 +53,7 @@ class _HomeState extends State<Home> {
                 style: TextStyle(fontSize: 20),
                 decoration: InputDecoration(
                     contentPadding: EdgeInsets.fromLTRB(32, 16, 32, 16),
-                    hintText: "senha",
+                    hintText: "Senha",
                     filled: true,
                     fillColor: Colors.white,
                     border: OutlineInputBorder(
@@ -84,8 +83,7 @@ class _HomeState extends State<Home> {
                     style: TextStyle(color: Colors.white),
                   ),
                   onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Signup()));
+                    Navigator.pushNamed(context, "/signup");
                   },
                 ),
               ),
