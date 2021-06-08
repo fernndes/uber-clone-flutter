@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:uberclone/pages/DriverPanel.dart';
 import 'package:uberclone/pages/Home.dart';
+import 'package:uberclone/pages/PassengerPanel.dart';
 import 'package:uberclone/pages/Signup.dart';
 
 class Routes {
@@ -12,6 +14,14 @@ class Routes {
       case "/signup":
         return MaterialPageRoute(
           builder: (_) => Signup(),
+        );
+      case "/driver-panel":
+        return MaterialPageRoute(
+          builder: (_) => DriverPanel(),
+        );
+      case "/passenger-panel":
+        return MaterialPageRoute(
+          builder: (_) => PassengerPanel(),
         );
       default:
         return _routeError();
